@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>razielx@home</title>
+  <meta name="description" content="Persönliche Seite von Raziel – Informatiker, Nerd, Freifunk Chemnitz.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="terminal">
+    <div class="titlebar">
+      <span class="dot dot-red"></span>
+      <span class="dot dot-yellow"></span>
+      <span class="dot dot-green"></span>
+      <span class="titlebar-text">razielx@home: ~</span>
+    </div>
+
+    <div class="screen">
+      <pre class="ascii" aria-hidden="true">
+ ____             _      _
+|  _ \ __ _ _____(_) ___| |
+| |_) / _` |_  / |/ _ \ |
+|  _ < (_| |/ /| |  __/ |
+|_| \_\__,_/___|_|\___|_|
+      </pre>
+
+      <p class="line">
+        <span class="prompt">razielx@home</span><span class="colon">:</span><span class="path">~</span><span class="dollar">$</span>
+        <span class="cmd" id="typed"></span><span class="cursor" aria-hidden="true">&#9608;</span>
+      </p>
+
+      <section id="whoami" class="output">
+        <h2>whoami</h2>
+        <ul class="facts">
+          <li>Informatiker</li>
+          <li>Nerd</li>
+          <li>Mitglied bei <a href="https://freifunk-chemnitz.de/" target="_blank" rel="noopener">Freifunk Chemnitz</a></li>
+          <li><!-- weitere Fakten über dich --></li>
+        </ul>
+      </section>
+
+      <section id="about" class="output">
+        <h2>cat about.txt</h2>
+        <p>
+          <!-- Kurzer Text über dich: was machst du, woran arbeitest du, was interessiert dich. -->
+          Hier steht noch ein kurzer Absatz über mich.
+        </p>
+      </section>
+
+      <section id="keys" class="output">
+        <h2>ls ./keys</h2>
+        <ul class="filelist">
+          <li>
+            <a href="files/gpg-pubkey.asc" download>gpg-pubkey.asc</a>
+            <span class="meta">GPG Public Key &middot; Fingerprint: <code>XXXX XXXX XXXX XXXX XXXX &nbsp; XXXX XXXX XXXX XXXX XXXX</code></span>
+          </li>
+          <li>
+            <a href="files/id_ed25519.pub" download>id_ed25519.pub</a>
+            <span class="meta">SSH Public Key (generisch, zum Einloggen auf meine Server o.ä.)</span>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact" class="output">
+        <h2>cat contact.txt</h2>
+        <ul class="filelist">
+          <li><a href="mailto:you@example.com">you@example.com</a></li>
+          <li><a href="https://github.com/yourhandle" target="_blank" rel="noopener">github.com/yourhandle</a></li>
+          <!-- weitere Links: Mastodon, Matrix, etc. -->
+        </ul>
+      </section>
+
+      <p class="line prompt-end">
+        <span class="prompt">razielx@home</span><span class="colon">:</span><span class="path">~</span><span class="dollar">$</span>
+        <span class="cursor" aria-hidden="true">&#9608;</span>
+      </p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
